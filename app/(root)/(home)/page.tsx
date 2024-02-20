@@ -64,7 +64,7 @@ const page = () => {
       <section className="max-width section-padding">
         <SectionHeading
           title="Mes compétences"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptates cupiditate ut?"
+          subtitle="Du portfolio au site vitrine, je donne vie à vos projets web"
         />
 
         {/* skills */}
@@ -77,11 +77,14 @@ const page = () => {
                   alt={skill.name}
                   width={35}
                   height={35}
+                  className="text-white"
                 />
               </div>
               <div className="text-center">
                 <h4 className="text-grey-700 mb-2">{skill.name}</h4>
-                <p className="text-grey-600">{skill.description}</p>
+                <p className="text-grey-600" style={{ whiteSpace: "pre-line" }}>
+                  {skill.description}
+                </p>
               </div>
             </div>
           ))}

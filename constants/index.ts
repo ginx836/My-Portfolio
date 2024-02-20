@@ -17,26 +17,25 @@ export const navLinks = [
 export const skills = [
   {
     id: 1,
-    name: "Front-end Development",
+    name: "Développement Front-end",
     description:
-      "Proficiency in coding the visual aspects of websites using HTML, CSS, and JavaScript to ensure a seamless and attractive user interface.",
-    icon: "/icons/service-1.svg",
+      "Coder l'aspect visuel de votre site pour assurer une expérience attractive et sans accroc.",
+    icon: "/icons/code.svg",
   },
   {
     id: 2,
-    name: "User Interface - UI Development",
+    name: "UI / UX Design",
     description:
-      "Ability to craft visually appealing and user-friendly interfaces using code to enhance user engagement and interaction.",
-    icon: "/icons/service-2.svg",
+      "Créer une interface utilisateur intuitive et conviviale pour un site web ou une application. Améliorer l'expérience utilisateur pour un impact positif sur votre audience.",
+    icon: "/icons/swatch-book.svg",
   },
   {
     id: 3,
-    name: "User Experience - UX Development",
+    name: "Accessibilité et SEO",
     description:
-      "Understanding of user behavior and experience principles applied through coding to create seamless and satisfying user interactions.",
-    icon: "/icons/service-3.svg",
+      "Mettre en place les bonnes pratiques en matière d'accessibilité pour booster votre site web.\nAméliorer la visibilité de votre site sur les moteurs de recherche grâce à une optimisation SEO.",
+    icon: "/icons/user.svg",
   },
-
 ];
 
 export const portfolios = [
@@ -156,4 +155,3 @@ export const contactDetails = [
     text: "Auxerre, France",
   },
 ];
-
