@@ -9,12 +9,9 @@ const Contact = () => {
       <section className="max-width section-padding" id="contact">
         <div className="box text-center flex items-center flex-col gap-3">
           <div className="w-16 h-16 rounded bg-purple flex items-center justify-center flex-shrink-0 mb-5">
-            <Image src={"/icons/stars.svg"} alt="icon" width={35} height={35} />
+            <Image src={"/icons/mail.svg"} alt="icon" width={35} height={35} />
           </div>
           <h2 className="text-grey-700">On reste en contact ?</h2>
-          <p className="text-grey-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
         </div>
       </section>
 
@@ -23,19 +20,24 @@ const Contact = () => {
           <div className="space-y-4">
             <div className="box !p-6 ">
               <p className="text-grey-600">
-                Vous pouvez me contacter par mail ici
+                Vous pouvez me contacter directement par mail
               </p>
-              <h6 className="tex-tgrey-700">cedric.bourquin1@icloud.com</h6>
+              <h6 className="tex-tgrey-700">
+                <a href="mailto:cedric.bourquin1@icloud.com">
+                  cedric.bourquin1@icloud.com
+                </a>
+              </h6>
             </div>
             <div className="box !p-6 ">
               <p className="text-grey-600">
                 Vous pouvez me contacter par téléphone
               </p>
-              <h6 className="tex-tgrey-700">+33 661217242</h6>
+              <h6 className="text-grey-700">
+                <a href="tel:+336 61 21 72 42">+336 61 21 72 42</a>
+              </h6>
             </div>
             <div className="box !p-6 ">
-              <p className="text-grey-600">Adresse</p>
-              <h6 className="tex-tgrey-700">Mon adresse</h6>
+              <h6 className="tex-tgrey-700">Auxerre, France</h6>
             </div>
             <h6 className="mt-10 mb-3 text-grey-700 max-tablet:text-center">
               Mes réseaux
@@ -46,9 +48,9 @@ const Contact = () => {
                   key={index}
                   href={link.url}
                   target="_blank"
-                  className="w-10 h-10 bg-purple text-peach flex items-center justify-center rounded"
+                  className="w-8 h-8 bg-purple text-peach flex items-center justify-center rounded"
                 >
-                  <link.icon strokeWidth={0} fill="currentColor" />
+                  <Image src={link.icon} alt="icon" width={20} height={20} />
                 </a>
               ))}
             </div>

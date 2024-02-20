@@ -1,5 +1,6 @@
 import NavLink from "./NavLink";
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 
 import { navLinks, socialLinks } from "@/constants";
@@ -25,9 +26,9 @@ const Header = () => {
               href={link.url}
               target="_blank"
               key={index}
-              className=" text-purple flex items-center justify-center rounded"
+              className="w-8 h-8 bg-purple flex items-center justify-center rounded"
             >
-              <link.icon />
+              <Image src={link.icon} alt="icon" width={20} height={20} />
             </a>
           ))}
         </div>

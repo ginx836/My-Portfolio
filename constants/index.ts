@@ -1,4 +1,5 @@
-import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
+
 
 export const navLinks = [
   {
@@ -20,7 +21,7 @@ export const skills = [
     name: "Développement Front-end",
     description:
       "Coder l'aspect visuel de votre site pour assurer une expérience attractive et sans accroc.",
-    icon: "/icons/code.svg",
+    icon: "/icons/file-code-2.svg",
   },
   {
     id: 2,
@@ -134,24 +135,8 @@ export const socialLinks = [
   {
     id: 1,
     label: "Linkedin",
-    icon: Linkedin,
+    icon: "/icons/linkedin.svg",
     url: "https://www.linkedin.com/in/cedric-bourquin-092a8a250/",
   },
 ];
-export const contactDetails = [
-  {
-    id: 1,
-    icon: Phone,
-    text: "+33 661217242",
-  },
-  {
-    id: 2,
-    icon: Mail,
-    text: "cedric.bourquin1@icloud.com",
-  },
-  {
-    id: 3,
-    icon: MapPin,
-    text: "Auxerre, France",
-  },
-];
+
