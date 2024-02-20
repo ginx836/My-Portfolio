@@ -7,14 +7,14 @@ import { usePathname } from "next/navigation";
 const NavLink = ({
   href,
   label,
-  className,
-  onClick
+  className = "",
+  onClick = () => {},
 }: {
   href: string;
   label: string;
   className?: string;
-  onClick: () => void;
-}) => {
+  onClick?: () => void;
+}): JSX.Element => {
   //Check if current pathname is active
   const pathname = usePathname();
 

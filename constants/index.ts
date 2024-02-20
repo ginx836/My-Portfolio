@@ -135,7 +135,7 @@ export const socialLinks = [
     id: 1,
     label: "Linkedin",
     icon: Linkedin,
-    url: "#",
+    url: "https://www.linkedin.com/in/cedric-bourquin-092a8a250/",
   },
 ];
 export const contactDetails = [
