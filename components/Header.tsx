@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 
 import {navLinks} from "@/constants"
-import {Phone} from "lucide-react"
 import MobileMenu from "./MobileMenu";
 
 const Header = () => {
@@ -20,9 +19,6 @@ const Header = () => {
           </li>
          ))}
         </ul>
-        <Link href={"/contact"} className="btn btn-primary">
-          <Phone size={18} /> Contactez-moi
-        </Link>
       </nav>
       <MobileMenu />
     </header>

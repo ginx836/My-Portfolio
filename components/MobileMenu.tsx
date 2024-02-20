@@ -6,7 +6,6 @@ import NavLink from "./NavLink";
 import { navLinks, socialLinks } from "@/constants";
 
 import { Menu, X, Phone } from "lucide-react";
-import { Herr_Von_Muellerhoff } from "next/font/google";
 
 const MobileMenu = () => {
   const [is0pen, setIsOpen] = useState(false);
@@ -50,18 +49,20 @@ const MobileMenu = () => {
                   href={link.url}
                   label={link.label}
                   className="text-3xl"
+                  onClick={toggleMenu}
                 />
               </li>
             ))}
           </ul>
-          <Link href={"/contact"} className="btn btn-primary">
-            <Phone size={18} /> Contactez-moi
-          </Link>
         </nav>
 
-        <div className="w-full h-20 flex items-center justify-between max-width border-t border-peach">
+        <div className="w-full h-20 flex items-center justify-center max-width border-t border-peach">
           {socialLinks.map((link, index) => (
-            <a href={link.url} key={index} className="text-grey-700 hover:text-purple transition-colors">
+            <a
+              href={link.url}
+              key={index}
+              className="text-grey-700 hover:text-purple transition-colors"
+            >
               {link.label}
             </a>
           ))}

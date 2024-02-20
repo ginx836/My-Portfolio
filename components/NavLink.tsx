@@ -8,10 +8,12 @@ const NavLink = ({
   href,
   label,
   className,
+  onClick
 }: {
   href: string;
   label: string;
   className?: string;
+  onClick: () => void;
 }) => {
   //Check if current pathname is active
   const pathname = usePathname();
@@ -19,6 +21,7 @@ const NavLink = ({
   return (
     <Link
       href={href}
+      onClick={onClick}
       className={`navlinks ${className}
       ${
         pathname === href
