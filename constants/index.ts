@@ -10,7 +10,7 @@ export const navLinks = [
     url: "/about",
   },
   {
-    label: "Mes projets",
+    label: "Réalisations",
     url: "/portfolio",
   },
 ];
@@ -36,27 +36,7 @@ export const skills = [
       "Understanding of user behavior and experience principles applied through coding to create seamless and satisfying user interactions.",
     icon: "/icons/service-3.svg",
   },
-  {
-    id: 4,
-    name: "Responsive Web Development",
-    description:
-      "Capability to develop websites that adapt and function flawlessly across various devices and screen sizes using coding techniques.",
-    icon: "/icons/service-4.svg",
-  },
-  {
-    id: 5,
-    name: "Prototyping and Development Testing",
-    description:
-      "Ability to code prototypes and conduct thorough testing to visualize and refine website functionalities.",
-    icon: "/icons/service-5.svg",
-  },
-  {
-    id: 6,
-    name: "Mobile-Friendly Coding",
-    description:
-      "Proficiency in coding practices that ensure websites function seamlessly on mobile devices.",
-    icon: "/icons/service-6.svg",
-  },
+
 ];
 
 export const portfolios = [

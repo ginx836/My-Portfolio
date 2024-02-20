@@ -1,17 +1,12 @@
 import React from "react";
-import { Metadata } from "next";
 import Image from "next/image";
 
 import { socialLinks } from "@/constants";
 
-export const metadata: Metadata = {
-  title: "Contact - Cédric Bourquin",
-};
-
-const page = () => {
+const Contact = () => {
   return (
     <>
-      <section className="max-width section-padding">
+      <section className="max-width section-padding" id="contact">
         <div className="box text-center flex items-center flex-col gap-3">
           <div className="w-16 h-16 rounded bg-purple flex items-center justify-center flex-shrink-0 mb-5">
             <Image src={"/icons/stars.svg"} alt="icon" width={35} height={35} />
@@ -67,15 +62,16 @@ const page = () => {
             <div className="flex gap-5 max-tablet:flex-col">
               <input type="text" placeholder="Email" />
             </div>
-            <textarea placeholder="Message" className="min-h-[200px]"></textarea>
+            <textarea
+              placeholder="Message"
+              className="min-h-[200px]"
+            ></textarea>
             <button className="btn btn-primary">Envoyer</button>
           </form>
         </div>
       </section>
-
-      
     </>
   );
 };
 
-export default page;
+export default Contact;

@@ -5,7 +5,7 @@ import { portfolios } from "@/constants";
 import PortfolioSection from "@/components/PortfolioSection";
 
 export const metadata: Metadata = {
-  title: "Mes projets - Cédric Bourquin",
+  title: "Mes réalisations - Cédric Bourquin",
 };
 
 const page = () => {
@@ -16,7 +16,7 @@ const page = () => {
           <div className="w-16 h-16 rounded bg-purple flex items-center justify-center flex-shrink-0 mb-5">
             <Image src={"/icons/stars.svg"} alt="icon" width={35} height={35} />
           </div>
-          <h2 className="text-grey-700">Mes projets</h2>
+          <h2 className="text-grey-700">Mes réalisations</h2>
           <p className="text-grey-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </section>

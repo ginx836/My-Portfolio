@@ -7,6 +7,7 @@ import SectionHeading from "@/components/SectionHeading";
 import PortfolioItem from "@/components/PortfolioItem";
 import { ArrowRight } from "lucide-react";
 import { portfolios, skills } from "@/constants";
+import Contact from "@/components/Contact";
 
 const page = () => {
   return (
@@ -16,21 +17,30 @@ const page = () => {
         {/* left side */}
         <div className="tablet:w-2/3 mt-10 tablet:mt-0">
           <div className="flex flex-col gap-3 items-center tablet:items-start max-w-2xl text-center tablet:text-left">
-            <p className="px-4 py-2 bg-peach-500 text-grey-600 w-max rounded">
-              Développeur Web
-            </p>
-            <h1 className="text-grey">GinxDev.</h1>
+            <div className="flex flex-col">
+              <p className="text-sm uppercase font-semibold mb-2 text-purple tracking-[4px] w-max">
+                Développeur Web Junior
+              </p>
+              <h1 className="text-grey">GinxDev.</h1>
+            </div>
             <p className="text-grey-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              facilis, atque, tenetur optio culpa non distinctio amet corporis
-              voluptatem iste illo facere dolorum? Quos, sequi? Numquam tempore
-              sapiente qui sed?
+              Bonjour, je suis Cédric Bourquin, développeur web junior.
+              <br /> Du code à la conception, mon objectif est de vous aider à
+              donner vie à vos projets web pour créer une expérience
+              exceptionnelle.
+              <br />
             </p>
+            <div className="py-2">
+              <p className="py-2 text-lg font-semibold text-purple">
+                Design, develop & deploy
+              </p>
+              <p className="text-lg italic">"Keep moving forward"</p>
+            </div>
           </div>
           <div className="flex gap-5 mt-10 justify-center tablet:justify-start">
-            <Link href={"/contact"} className="btn btn-primary">
+            <a href={"#contact"} className="btn btn-primary">
               Contactez-moi
-            </Link>
+            </a>
             <Link href={"/portfolio"} className="btn">
               Mon portfolio
               <ArrowRight size={16} />
@@ -44,6 +54,7 @@ const page = () => {
             src="/images/hero.png"
             alt="hero"
             fill
+            priority
             className="object-cover"
           />
         </div>
@@ -90,10 +101,16 @@ const page = () => {
           ))}
         </div>
 
-        <Link href={"/portfolio"} className="btn btn-primary mt-10 mx-auto w-max">
+        <Link
+          href={"/portfolio"}
+          className="btn btn-primary mt-10 mx-auto w-max"
+        >
           Voir tous les projets
         </Link>
       </section>
+
+      {/* //contact section */}
+      <Contact />
     </>
   );
 };
