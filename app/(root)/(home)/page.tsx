@@ -6,7 +6,7 @@ import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 import PortfolioItem from "@/components/PortfolioItem";
 import { ArrowRight } from "lucide-react";
-import { portfolios, skills } from "@/constants";
+import { projects, skills } from "@/constants";
 import Contact from "@/components/Contact";
 
 const page = () => {
@@ -98,12 +98,12 @@ const page = () => {
       <section className="section-padding max-width">
         <SectionHeading
           title="Mes projets"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptates cupiditate ut?"
+          subtitle="Voici mes dernières réalisations"
         />
 
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] tablet:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-3 tablet:gap-6">
-          {portfolios.slice(0, 3).map((portfolio, index) => (
-            <PortfolioItem key={index} portfolio={portfolio} />
+          {projects.slice(0, 3).map((projet, id) => (
+            <PortfolioItem key={id} project={projet} />
           ))}
         </div>
 
