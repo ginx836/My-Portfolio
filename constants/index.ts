@@ -144,7 +144,7 @@ export const projects = [
     header: "Booki",
     body_title: "Intégration de maquette",
     description:
-      "Mon tout premier projet.\nIl s'agit d'une intégration simple d'une maquette FIGMA.\nPremière mise en pratique HTML/CSS.\n\nLe projet m'a permis de découvrir les bases du HTML et du CSS.\n\nLe point de challenge sur ce projet aura été de comprendre comment fonctionne le positionnement des éléments en CSS et comment les manipuler pour obtenir le résultat souhaité.\n\nJ'ai également découvert Git et GitHub et comment versionner son code.",
+      "Mon tout premier projet.\nIl s'agit d'une intégration simple d'une maquette FIGMA.\nPremière mise en pratique HTML/CSS.",
     objectifs: [
       "Intégrer une maquette en HTML et CSS",
       "Respecter les bonnes pratiques du HTML et du CSS",

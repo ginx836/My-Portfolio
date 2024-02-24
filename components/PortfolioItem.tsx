@@ -1,13 +1,14 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react'
-import Image from 'next/image'
-import { projects } from '@/constants'
-import { ArrowUpRight } from 'lucide-react'
+import React, { useState } from "react";
+import Image from "next/image";
+import { projects } from "@/constants";
+import { ArrowUpRight } from "lucide-react";
 
-const PortfolioItem = ({project} :{project:typeof projects[0]}) => {
+import Link from "next/link";
 
-  const [currentImg, setCurrentImg] = useState(project.pictures[0])
+const PortfolioItem = ({ project }: { project: (typeof projects)[0] }) => {
+  const [currentImg, setCurrentImg] = useState(project.pictures[0]);
 
   return (
     <div className="box">
@@ -16,14 +17,16 @@ const PortfolioItem = ({project} :{project:typeof projects[0]}) => {
         <Image
           src={currentImg}
           alt={project.header}
-          fill
           priority
+          fill
           className="object-contain"
         />
         <div className="bg-black bg-opacity-10 backdrop-blur-[1px] absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-          <div className="w-16 h-16 flex items-center justify-center bg-peach-700 border border-peach-400 p-3 text-grey rounded-lg">
-            <ArrowUpRight />
-          </div>
+          <Link href={`/portfolio/${project.id}`} aria-label="Voir le projet">
+            <div className="w-16 h-16 flex items-center justify-center bg-peach-700 border border-peach-400 p-3 text-grey rounded-lg">
+              <ArrowUpRight />
+            </div>
+          </Link>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-3">
@@ -38,14 +41,18 @@ const PortfolioItem = ({project} :{project:typeof projects[0]}) => {
               alt={project.header}
               fill
               className="object-contain"
+              sizes="100vw"
             />
-            <div className={`bg-black bg-opacity-10 backdrop-blur-[1px] absolute top-0 left-0 w-full h-full transition-opacity duration-300 ${currentImg !== picture ? 'opacity-100' : 'opacity-0'}`}>
-            </div>
+            <div
+              className={`bg-black bg-opacity-10 backdrop-blur-[1px] absolute top-0 left-0 w-full h-full transition-opacity duration-300 ${
+                currentImg !== picture ? "opacity-100" : "opacity-0"
+              }`}
+            ></div>
           </div>
         ))}
       </div>
     </div>
   );
-}
+};
 
-export default PortfolioItem
+export default PortfolioItem;

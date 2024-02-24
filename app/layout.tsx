@@ -5,8 +5,9 @@ import "./globals.css";
 const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio Test",
-  description: "Tuto Portfolio Next.js 13",
+  title: "Gindev - Cédric Bourquin",
+  description: "Mon portfolio de développeur web",
+  keywords: ["portfolio", "développeur web", "développeur front-end", "next.js", "tailwindcss"],
 };
 
 export default function RootLayout({

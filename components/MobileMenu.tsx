@@ -20,6 +20,7 @@ const MobileMenu = () => {
       <button
         className="text-grey-700 hover:text-purple transition-colors"
         onClick={toggleMenu}
+        aria-label="Menu"
       >
         <Menu />
       </button>
@@ -30,12 +31,13 @@ const MobileMenu = () => {
       ${is0pen ? "-translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex w-full items-center justify-between h-20 max-width border-b border-peach">
-          <Link href={"/"}>
+          <Link href={"/"} aria-label="Accueil">
             <h5 className="text-purple text-xl font-semibold">GinxDev.</h5>
           </Link>
           <button
             className="text-grey-700 hover:text-purple transition-colors"
             onClick={toggleMenu}
+            aria-label="Fermer le menu"
           >
             <X />
           </button>
