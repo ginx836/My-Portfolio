@@ -41,7 +41,6 @@ const PortfolioItem = ({ project }: { project: (typeof projects)[0] }) => {
               alt={project.header}
               fill
               className="object-contain"
-              sizes="100vw"
             />
             <div
               className={`bg-black bg-opacity-10 backdrop-blur-[1px] absolute top-0 left-0 w-full h-full transition-opacity duration-300 ${

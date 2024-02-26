@@ -64,6 +64,7 @@ export default function PortfolioDetails({ params }: any) {
                     src={picture}
                     alt={project.header}
                     fill
+                    priority
                     className="object-contain"
                   />
                 </div>

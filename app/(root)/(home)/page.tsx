@@ -5,6 +5,7 @@ import Image from "next/image";
 // components
 import SectionHeading from "@/components/SectionHeading";
 import PortfolioItem from "@/components/PortfolioItem";
+import ScrollToTop from "@/components/ScrollToTop";
 import { ArrowRight } from "lucide-react";
 import { projects, skills } from "@/constants";
 import Contact from "@/components/Contact";
@@ -117,6 +118,8 @@ const page = () => {
 
       {/* //contact section */}
       <Contact />
+
+      <ScrollToTop />
     </>
   );
 };
