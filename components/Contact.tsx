@@ -1,9 +1,59 @@
-import React from "react";
+"use client";
+
+import React, { FormEvent, useRef } from "react";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
 
 import { socialLinks } from "@/constants";
 
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const nameRef = useRef<HTMLInputElement>(null);
+  const surnameRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+
+  const sendEmail = (e: FormEvent) => {
+    e.preventDefault();
+
+    if (
+      !emailRef.current ||
+      !nameRef.current ||
+      !surnameRef.current ||
+      !messageRef.current
+    ) {
+      return;
+    }
+
+    const templateParams = {
+      name: nameRef.current.value,
+      surname: surnameRef.current.value,
+      email: emailRef.current.value,
+      message: messageRef.current.value,
+    };
+
+    emailjs
+      .send(
+        "service_icloud", // service ID
+        "template_n1a27lm", // template ID
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY // public KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Votre message a bien été envoyé");
+          if (formRef.current) {
+            formRef.current.reset();
+          }
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Une erreur est survenue");
+        }
+      );
+  };
+
   return (
     <>
       <section className="max-width section-padding" id="contact">
@@ -57,19 +107,38 @@ const Contact = () => {
           </div>
         </div>
         <div className="box w-full">
-          <form action="" className="space-y-5">
+          <form onSubmit={sendEmail} ref={formRef} className="space-y-5">
             <div className="flex gap-5 max-tablet:flex-col">
-              <input type="text" placeholder="Nom" />
-              <input type="text" placeholder="Prenom" />
+              <input
+                type="text"
+                placeholder="Nom"
+                name="user_name"
+                ref={nameRef}
+              />
+              <input
+                type="text"
+                placeholder="Prenom"
+                name="user_surname"
+                ref={surnameRef}
+              />
             </div>
             <div className="flex gap-5 max-tablet:flex-col">
-              <input type="text" placeholder="Email" />
+              <input
+                type="text"
+                placeholder="Email"
+                name="user_email"
+                ref={emailRef}
+              />
             </div>
             <textarea
               placeholder="Message"
               className="min-h-[200px]"
+              name="message"
+              ref={messageRef}
             ></textarea>
-            <button className="btn btn-primary">Envoyer</button>
+            <button type="submit" className="btn btn-primary">
+              Envoyer
+            </button>
           </form>
         </div>
       </section>
