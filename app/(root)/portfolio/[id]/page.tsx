@@ -61,11 +61,13 @@ export default function PortfolioDetails({ params }: any) {
               </div>
             </div>
 
-            <div className="flex max-tablet:flex-col gap-3 mb-20">
+            <div className="flex max-tablet:flex-col mb-20">
               {project.pictures.map((picture, index) => (
                 <div
                   key={index}
-                  className="relative h-80 w-full rounded-lg overflow-hidden group"
+                  className={`relative h-80 w-full rounded-lg overflow-hidden group ${
+                    index !== 0 ? "max-tablet:hidden" : "block"
+                  }`}
                 >
                   <Image
                     src={picture}
