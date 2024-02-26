@@ -11,6 +11,9 @@ import { projects, skills } from "@/constants";
 import Contact from "@/components/Contact";
 
 const page = () => {
+  const shuffledProjects = projects.sort(() => 0.5 - Math.random());
+  const randomProjects = shuffledProjects.slice(0, 3);
+
   return (
     <>
       {/* // hero section */}
@@ -71,10 +74,7 @@ const page = () => {
         {/* skills */}
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] tablet:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-3 tablet:gap-6">
           {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="box flex flex-col items-center gap-5"
-            >
+            <div key={index} className="box flex flex-col items-center gap-5">
               <div className="w-16 h-16 rounded bg-purple flex items-center justify-center flex-shrink-0 mb-2">
                 <Image
                   src={skill.icon}
@@ -99,11 +99,10 @@ const page = () => {
       <section className="section-padding max-width">
         <SectionHeading
           title="Mes projets"
-          subtitle="Voici mes dernières réalisations"
+          subtitle="Voici quelques exemples de mes réalisations"
         />
-
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] tablet:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-3 tablet:gap-6">
-          {projects.slice(0, 3).map((projet, id) => (
+          {randomProjects.map((projet, id) => (
             <PortfolioItem key={id} project={projet} />
           ))}
         </div>
