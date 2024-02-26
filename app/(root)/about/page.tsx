@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 function page() {
   return (
     <>
-      <section className="max-width section-padding flex flex-col tablet:flex-row gap-20 items-center">
-        <div className="relative w-full tablet:w-1/2 h-[calc(300px+20vw)] tablet:h-[700px]">
+      <section className="max-width section-padding flex flex-col tablet:flex-row gap-20 items-center justify-center">
+        <div className="relative w-full tablet:w-1/3 h-[calc(300px+20vw)] tablet:h-[700px]">
           <Image
             src={"/images/profil-picture.webp"}
             fill
@@ -28,13 +28,12 @@ function page() {
             </h1>
             <p className="text-grey-600 leading-7 pb-5">
               "Tech Enthusiast", né au début des années 80, j'ai grandi avec
-              l'informatique et le numérique. Parce qu'il n'est jamais trop tard
-              pour apprendre et se lancer j'ai décidé de faire de ma passion mon
+              l'informatique et le numérique.<br/> Parce qu'il n'est jamais trop tard
+              pour apprendre et se lancer, j'ai décidé d'asscoier ma passion et mon
               métier après 21 ans de commerce au service de mes clients.
               <br />
-              Auto-didacte, grâce à OpenClassrooms j'ai pu mettre un premier
-              pied à l'étrier en développant mes compétences.
-              <br />
+              C'est pourquoi j'ai décidé de me former au développement web pour mêler création et digital.<br />
+              Je mets donc mon expérience et ma passion au service de vos projets. 
             </p>
             <p className="font-bold text-lg text-center">
              Continuer à apprendre, mettre mes compétences au service
