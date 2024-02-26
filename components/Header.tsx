@@ -26,9 +26,14 @@ const Header = () => {
               href={link.url}
               target="_blank"
               key={index}
-              className="w-8 h-8 bg-purple flex items-center justify-center rounded"
+              className="w-8 h-8 flex items-center justify-center rounded"
             >
-              <Image src={link.icon} alt="icon" width={20} height={20} />
+              <Image
+                src={link.icon}
+                alt="icon"
+                width={25}
+                height={25}
+              />
             </a>
           ))}
         </div>

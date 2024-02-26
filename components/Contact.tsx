@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FormEvent, useRef } from "react";
+import React, { FormEvent, useRef, useState } from "react";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
 
@@ -13,8 +13,12 @@ const Contact = () => {
   const surnameRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isEmailSent, setIsEmailSent] = useState(false);
+
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     if (
       !emailRef.current ||
@@ -42,14 +46,20 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Votre message a bien été envoyé");
+          setIsSubmitting(false);
+          setIsEmailSent(true);
           if (formRef.current) {
             formRef.current.reset();
           }
+
+          setTimeout(() => {
+            setIsEmailSent(false);
+          }, 3000);
         },
+        
         (error) => {
           console.log(error.text);
-          alert("Une erreur est survenue");
+          setIsSubmitting(false);
         }
       );
   };
@@ -98,9 +108,9 @@ const Contact = () => {
                   key={index}
                   href={link.url}
                   target="_blank"
-                  className="w-8 h-8 bg-purple text-peach flex items-center justify-center rounded"
+                  className="w-8 h-8 flex items-center justify-center rounded"
                 >
-                  <Image src={link.icon} alt="icon" width={20} height={20} />
+                  <Image src={link.icon} alt="icon" width={25} height={25} />
                 </a>
               ))}
             </div>
@@ -136,9 +146,21 @@ const Contact = () => {
               name="message"
               ref={messageRef}
             ></textarea>
-            <button type="submit" className="btn btn-primary">
-              Envoyer
-            </button>
+
+            <div className="flex gap-10 items-center">
+              <button type="submit" className="btn btn-primary">
+                Envoyer
+              </button>
+
+              {isSubmitting && (
+                <p className="text-purple font-bold">Envoi en cours...</p>
+              )}
+              {isEmailSent && (
+                <p className="text-purple font-bold">
+                  Votre message a bien été envoyé !
+                </p>
+              )}
+            </div>
           </form>
         </div>
       </section>
