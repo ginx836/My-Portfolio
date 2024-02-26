@@ -43,7 +43,7 @@ function page() {
         </div>
       </section>
       <section className="max-width section-padding">
-        <h2 className="text-grey-700 text-center pb-5 max-tablet:text-xl">
+        <h2 className="text-blue text-center pb-5 max-tablet:text-xl">
           "La seule façon de faire du bon travail est d'aimer ce que vous
           faites" - Steve Jobs
         </h2>
