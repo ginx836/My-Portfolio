@@ -8,6 +8,7 @@ import {
   SiJavascript,
   SiGoogle,
   SiGooglechrome,
+  SiLighthouse,
   SiReact,
   SiSass,
   SiReactrouter,
@@ -23,6 +24,7 @@ export const TECHNOLOGIES = {
   SiJavascript: { icon: SiJavascript, name: "JavaScript" },
   SiGoogle: { icon: SiGoogle, name: "Google" },
   SiGooglechrome: { icon: SiGooglechrome, name: "Chrome DevTools" },
+  SiLighthouse: { icon: SiLighthouse, name: "Lighthouse" },
   SiReact: { icon: SiReact, name: "React" },
   SiReactrouter: { icon: SiReactrouter, name: "React Router" },
   SiSass: { icon: SiSass, name: "Sass" },
@@ -56,7 +58,7 @@ const RenderTechnologies: React.FC<RenderTechnologiesProps> = ({
               return null;
             }
             return (
-              <li key={index} className="flex flex-col items-center">
+              <li key={index} className="flex flex-col items-center gap-2">
                 <TechnologyComponent.icon size={size} />
                 <p className="text-grey-600 text-sm text-center flex items-center justify-center">
                   {TechnologyComponent.name}
