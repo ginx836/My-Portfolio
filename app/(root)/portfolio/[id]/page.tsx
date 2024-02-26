@@ -2,16 +2,23 @@ import React from "react";
 import { projects } from "@/constants";
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import RenderTechnologies from "@/components/DisplayDevIcon";
+import { ArrowLeft, ArrowRight } from "lucide-react"; // Import Lucide icons
 
 export const metadata: Metadata = {
   title: "Mes projets - Cédric Bourquin",
 };
 
-//Récupère l'id et affiche le projet correspondant
 export default function PortfolioDetails({ params }: any) {
   const { id } = params;
   const project = projects.find((project) => project.id === parseInt(id));
+
+  const hasPreviousProject =
+    projects.findIndex((p) => p.id === parseInt(id) - 1) !== -1;
+  const hasNextProject =
+    projects.findIndex((p) => p.id === parseInt(id) + 1) !== -1;
+
   return (
     <div>
       {project && (
@@ -71,15 +78,45 @@ export default function PortfolioDetails({ params }: any) {
               ))}
             </div>
 
-            <div className="flex gap-5 justify-center">
-              <a href={project.link} className="btn btn-primary">
-                GitHub
-              </a>
-              {project.link2 && (
-                <a href={project.link2} className="btn btn-primary">
-                  Voir le site
+            <div className="flex w-full justify-between items-center gap-5">
+              <div>
+                {hasPreviousProject && (
+                  <Link
+                    href={`/portfolio/${
+                      projects[
+                        projects.findIndex((p) => p.id === parseInt(id) - 1)
+                      ].id
+                    }`}
+                  >
+                    <ArrowLeft size={20} className="hover:text-purple" />
+                  </Link>
+                )}
+              </div>
+
+              <div className="flex gap-5 justify-center items-center">
+                <a href={project.link} className="btn btn-primary">
+                  GitHub
                 </a>
-              )}
+                {project.link2 && (
+                  <a href={project.link2} className="btn btn-primary">
+                    Voir le site
+                  </a>
+                )}
+              </div>
+
+              <div>
+                {hasNextProject && (
+                  <Link
+                    href={`/portfolio/${
+                      projects[
+                        projects.findIndex((p) => p.id === parseInt(id) + 1)
+                      ].id
+                    }`}
+                  >
+                    <ArrowRight size={20} className="hover:text-purple" />
+                  </Link>
+                )}
+              </div>
             </div>
           </div>
         </section>
