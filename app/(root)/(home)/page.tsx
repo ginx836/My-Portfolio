@@ -53,9 +53,9 @@ const page = () => {
         </div>
 
         {/* right side */}
-        <div className="relative w-full tablet:w-1/3 h-[400px] tablet:h-[700px] rounded-b-2xl overflow-hidden">
+        <div className="relative w-full tablet:w-1/2 h-[400px] tablet:h-[700px] rounded-b-2xl overflow-hidden">
           <Image
-            src="/images/hero.png"
+            src="/images/logo4.svg"
             alt="hero"
             fill
             priority
