@@ -25,7 +25,7 @@ export default function PortfolioDetails({ params }: any) {
         <section className="max-width section-padding">
           <div className="box flex flex-col">
             <div className="gap-2 mb-10">
-              <h1 className="uppercase text-3xl tracking-[4px] text-blue">
+              <h1 className="uppercase text-3xl tracking-[4px] text-purple">
                 {project.header}
               </h1>
               <h2 className="text-grey-700 text-xl">{project.body_title}</h2>
@@ -40,7 +40,7 @@ export default function PortfolioDetails({ params }: any) {
 
             <div className="flex max-tablet:flex-col max-tablet:items-center mb-10">
               <div className="mb-10 w-1/2 max-tablet:w-full max-tablet:flex max-tablet:flex-col max-tablet:items-center">
-                <h3 className="text-blue text-lg uppercase tracking-[4px] mb-5">
+                <h3 className="text-purple text-lg uppercase tracking-[4px] mb-5">
                   Objectifs
                 </h3>
                 <ul className="text-sm">
@@ -50,7 +50,7 @@ export default function PortfolioDetails({ params }: any) {
                 </ul>
               </div>
               <div className="mb-3 flex flex-col">
-                <h3 className=" text-blue text-lg uppercase tracking-[4px] mb-5">
+                <h3 className=" text-purple text-lg uppercase tracking-[4px] mb-5">
                   Technologies
                 </h3>
                 <RenderTechnologies
@@ -90,7 +90,7 @@ export default function PortfolioDetails({ params }: any) {
                       ].id
                     }`}
                   >
-                    <ArrowLeft size={20} className="hover:text-blue" />
+                    <ArrowLeft size={20} className="hover:text-purple" />
                   </Link>
                 )}
               </div>
@@ -115,7 +115,7 @@ export default function PortfolioDetails({ params }: any) {
                       ].id
                     }`}
                   >
-                    <ArrowRight size={20} className="hover:text-blue" />
+                    <ArrowRight size={20} className="hover:text-purple" />
                   </Link>
                 )}
               </div>

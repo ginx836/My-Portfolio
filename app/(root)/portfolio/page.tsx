@@ -16,7 +16,7 @@ const page = ({ params }: any) => {
     <>
       <section className="max-width section-padding">
         <div className="box text-center flex items-center flex-col gap-3">
-          <div className="w-16 h-16 rounded bg-blue flex items-center justify-center flex-shrink-0 mb-5">
+          <div className="w-16 h-16 rounded bg-purple flex items-center justify-center flex-shrink-0 mb-5">
             <Image
               src={"/icons/folder.svg"}
               alt="icon"

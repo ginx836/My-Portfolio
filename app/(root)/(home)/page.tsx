@@ -22,20 +22,20 @@ const page = () => {
         <div className="tablet:w-2/3 mt-10 tablet:mt-0">
           <div className="flex flex-col gap-3 items-center tablet:items-start max-w-2xl text-center tablet:text-left">
             <div className="flex flex-col">
-              <p className="text-sm uppercase font-semibold mb-2 text-blue tracking-[4px] w-max">
+              <p className="text-sm uppercase font-semibold mb-2 text-purple tracking-[4px] w-max">
                 Développeur Web Junior
               </p>
               <h1 className="text-grey">GinxDev.</h1>
             </div>
             <p className="text-grey-600">
               Bonjour, je suis Cédric Bourquin, développeur web junior.
-              <br /> Du code à la conception, mon objectif est de vous aider à
-              donner vie à vos projets web pour créer une expérience
+              <br /> De la conception à la réalisation, mon objectif est de vous aider à
+              donner vie à vos projets web pour créer une expérience utilisateur
               exceptionnelle.
               <br />
             </p>
             <div className="py-2">
-              <p className="py-2 text-lg font-semibold text-blue">
+              <p className="py-2 text-lg font-semibold text-purple">
                 Design, develop & deploy
               </p>
               <p className="text-lg italic">"Keep moving forward"</p>
@@ -74,8 +74,8 @@ const page = () => {
         {/* skills */}
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] tablet:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-3 tablet:gap-6">
           {skills.map((skill, index) => (
-            <div key={index} className="box flex flex-col items-center gap-5">
-              <div className="w-16 h-16 rounded bg-blue flex items-center justify-center flex-shrink-0 mb-2">
+            <div key={index} className="box flex flex-col items-center  justify-between gap-3">
+              <div className="w-16 h-16 rounded bg-purple flex items-center justify-center flex-shrink-0 mb-2">
                 <Image
                   src={skill.icon}
                   alt={skill.name}
@@ -90,6 +90,17 @@ const page = () => {
                   {skill.description}
                 </p>
               </div>
+              <div></div>
+              <ul className="flex flex-wrap gap-2">
+                {skill.tags.map((tag, id) => (
+                  <li
+                    key={id}
+                    className="text-xs bg-purple text-white px-2 py-1 rounded"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

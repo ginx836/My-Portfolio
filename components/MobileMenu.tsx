@@ -18,7 +18,7 @@ const MobileMenu = () => {
     <div className="tablet:hidden">
       {/* toggle button */}
       <button
-        className="text-grey-700 hover:text-blue transition-colors"
+        className="text-grey-700 hover:text-purple transition-colors"
         onClick={toggleMenu}
         aria-label="Menu"
       >
@@ -32,10 +32,10 @@ const MobileMenu = () => {
       >
         <div className="flex w-full items-center justify-between h-20 max-width border-b border-peach">
           <Link href={"/"} aria-label="Accueil">
-            <h5 className="text-blue text-xl font-semibold">GinxDev.</h5>
+            <h5 className="text-purple text-xl font-semibold">GinxDev.</h5>
           </Link>
           <button
-            className="text-grey-700 hover:text-blue transition-colors"
+            className="text-grey-700 hover:text-purple transition-colors"
             onClick={toggleMenu}
             aria-label="Fermer le menu"
           >
@@ -63,7 +63,7 @@ const MobileMenu = () => {
             <a
               href={link.url}
               key={index}
-              className="text-grey-700 hover:text-blue transition-colors"
+              className="text-grey-700 hover:text-purple transition-colors"
             >
               {link.label}
             </a>

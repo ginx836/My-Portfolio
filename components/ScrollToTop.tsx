@@ -32,7 +32,7 @@ export default function ScrollToTop() {
       }}
     >
       <button
-        className="bg-blue border-purple p-3 text-white rounded-lg"
+        className="bg-purple border-purple p-3 text-white rounded-lg"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         aria-label="Scroll To Top"
       >

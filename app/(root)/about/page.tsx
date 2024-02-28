@@ -38,6 +38,11 @@ function page() {
               <br />
               Je mets donc mon expérience et ma passion au service de vos
               projets.
+              <br/><br/>
+              D'un point de vue plus personnel, je suis un passionné de jeux vidéos et notamment de JRPG et de FPS.
+              <br />
+              On échappe au cliché n'est ce pas ? 😄
+
             </p>
             <p className="font-bold text-lg text-center">
               Continuer à apprendre, mettre mes compétences au service de vos
@@ -47,7 +52,7 @@ function page() {
         </div>
       </section>
       <section className="max-width section-padding">
-        <h2 className="text-blue text-center pb-5 max-tablet:text-xl">
+        <h2 className="text-purple text-center pb-5 max-tablet:text-xl">
           "La seule façon de faire du bon travail est d'aimer ce que vous
           faites" - Steve Jobs
         </h2>
