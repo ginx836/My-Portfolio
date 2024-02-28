@@ -16,7 +16,7 @@
 
 @layer base {
   h1 {
-    @apply text-6xl font-bold;
+    @apply text-purple text-xl font-semibold;
   }
 
   h2 {
@@ -24,15 +24,15 @@
   }
 
   h3 {
-    @apply text-3xl font-semibold;
-  }
-
-  h4 {
     @apply text-2xl font-semibold;
   }
 
-  h5 {
+  h4 {
     @apply text-xl font-semibold;
+  }
+
+  h5 {
+    @apply text-lg font-semibold;
   }
 
   h6 {
@@ -41,6 +41,17 @@
 
   .navlinks {
     @apply py-3 text-grey-700 hover:text-purple transition-colors relative block after:block after:absolute after:left-0 after:h-0.5 after:bg-purple after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right after:hover:origin-left;
+  }
+
+  input,
+  textarea {
+    @apply w-full rounded px-6 py-4 border border-peach-700 bg-peach-500 outline-none text-sm text-grey-700;
+  }
+
+  .quote::before,
+  .quote::after {
+    content: '"';
+    margin: 0 0.3rem;
   }
 }
 
@@ -63,10 +74,5 @@
 
   .btn-primary {
     @apply text-peach-100 bg-purple;
-  }
-
-  input,
-  textarea {
-    @apply w-full rounded px-6 py-4 border border-peach-700 bg-peach-500 outline-none text-sm text-grey-700;
   }
 }

@@ -12,7 +12,7 @@ const PortfolioItem = ({ project }: { project: (typeof projects)[0] }) => {
 
   return (
     <div className="box">
-      <h4 className="mb-5">{project.header}</h4>
+      <h3 className="mb-5">{project.header}</h3>
       <div className="relative w-full h-80 rounded-lg overflow-hidden group cursor-pointer mb-5">
         <Image
           src={currentImg}
@@ -38,7 +38,7 @@ const PortfolioItem = ({ project }: { project: (typeof projects)[0] }) => {
           >
             <Image
               src={picture}
-              alt={project.header}
+              alt={`${project.header} - ${index}`}
               fill
               className="object-contain"
             />

@@ -82,26 +82,26 @@ const Contact = () => {
               <p className="text-grey-600">
                 Vous pouvez me contacter directement par mail
               </p>
-              <h6 className="tex-tgrey-700">
+              <p className="tex-tgrey-700 font-bold">
                 <a href="mailto:cedric.bourquin1@icloud.com">
                   cedric.bourquin1@icloud.com
                 </a>
-              </h6>
+              </p>
             </div>
             <div className="box !p-6 ">
               <p className="text-grey-600">
                 Vous pouvez me contacter par téléphone
               </p>
-              <h6 className="text-grey-700">
+              <p className="text-grey-700 font-bold">
                 <a href="tel:+336 61 21 72 42">+336 61 21 72 42</a>
-              </h6>
+              </p>
             </div>
             <div className="box !p-6 ">
-              <h6 className="tex-tgrey-700">Auxerre, France</h6>
+              <p className="tex-tgrey-700">Auxerre, France</p>
             </div>
-            <h6 className="mt-10 mb-3 text-grey-700 max-tablet:text-center">
+            <p className="mt-10 mb-3 text-grey-700 max-tablet:text-center">
               Mes réseaux
-            </h6>
+            </p>
             <div className="flex gap-3 box !p-6 w-max max-tablet:mx-auto">
               {socialLinks.map((link, index) => (
                 <a
@@ -110,7 +110,12 @@ const Contact = () => {
                   target="_blank"
                   className="w-8 h-8 flex items-center justify-center rounded"
                 >
-                  <Image src={link.icon} alt="icon" width={25} height={25} />
+                  <Image
+                    src={link.icon}
+                    alt="icone LinkedIn"
+                    width={25}
+                    height={25}
+                  />
                 </a>
               ))}
             </div>
@@ -124,12 +129,14 @@ const Contact = () => {
                 placeholder="Nom"
                 name="user_name"
                 ref={nameRef}
+                aria-label="Nom"
               />
               <input
                 type="text"
                 placeholder="Prenom"
                 name="user_surname"
                 ref={surnameRef}
+                aria-label="Prenom"
               />
             </div>
             <div className="flex gap-5 max-tablet:flex-col">
@@ -138,6 +145,7 @@ const Contact = () => {
                 placeholder="Email"
                 name="user_email"
                 ref={emailRef}
+                aria-label="Email"
               />
             </div>
             <textarea
@@ -145,6 +153,7 @@ const Contact = () => {
               className="min-h-[200px]"
               name="message"
               ref={messageRef}
+              aria-label="Message"
             ></textarea>
 
             <div className="flex gap-10 items-center">

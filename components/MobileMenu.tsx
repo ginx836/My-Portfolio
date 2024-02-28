@@ -31,9 +31,7 @@ const MobileMenu = () => {
       ${is0pen ? "-translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex w-full items-center justify-between h-20 max-width border-b border-peach">
-          <Link href={"/"} aria-label="Accueil">
-            <h5 className="text-purple text-xl font-semibold">GinxDev.</h5>
-          </Link>
+            <p className="text-purple text-xl font-semibold">GinxDev.</p>
           <button
             className="text-grey-700 hover:text-purple transition-colors"
             onClick={toggleMenu}

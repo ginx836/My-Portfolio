@@ -89,8 +89,10 @@ export default function PortfolioDetails({ params }: any) {
                         projects.findIndex((p) => p.id === parseInt(id) - 1)
                       ].id
                     }`}
+                    aria-label="Projet précédent"
                   >
                     <ArrowLeft size={20} className="hover:text-purple" />
+                    <span className="sr-only">Projet précédent</span>
                   </Link>
                 )}
               </div>
@@ -114,8 +116,10 @@ export default function PortfolioDetails({ params }: any) {
                         projects.findIndex((p) => p.id === parseInt(id) + 1)
                       ].id
                     }`}
+                    aria-label="Projet suivant"
                   >
                     <ArrowRight size={20} className="hover:text-purple" />
+                    <span className="sr-only">Projet suivant</span>
                   </Link>
                 )}
               </div>

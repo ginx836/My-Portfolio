@@ -22,6 +22,7 @@ export const skills = [
       "Coder l'aspect visuel de votre site pour assurer une expérience attractive et sans accroc.",
     tags: ["React", "TailwindCSS", "Next.js", "Node.js", "Express", "MongoDB"],
     icon: "/icons/file-code-2.svg",
+    alt:"skill développpelement"
   },
   {
     id: 2,
@@ -30,6 +31,7 @@ export const skills = [
       "Créer une interface utilisateur intuitive et conviviale pour un site web ou une application. Améliorer l'expérience utilisateur pour un impact positif sur votre audience.",
     tags: ["Figma", "Adobe XD"],
     icon: "/icons/swatch-book.svg",
+    alt:"skill design"
   },
   {
     id: 3,
@@ -38,6 +40,7 @@ export const skills = [
       "Mettre en place les bonnes pratiques en matière d'accessibilité pour booster votre site web.\nAméliorer la visibilité de votre site sur les moteurs de recherche grâce à une optimisation SEO.",
     tags: ["Google", "SEO", "Lighthouse"],
     icon: "/icons/user.svg",
+    alt:"skill accessibilite"
   },
 ];
 export const socialLinks = [

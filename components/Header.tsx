@@ -9,9 +9,7 @@ import MobileMenu from "./MobileMenu";
 const Header = () => {
   return (
     <header className="flex items-center justify-between h-20 max-width border-b border-peach">
-      <Link href="/" aria-label="Accueil">
-        <h5 className="text-purple text-xl font-semibold">GinxDev.</h5>
-      </Link>
+        <h1 className="text-purple text-xl font-semibold">GinxDev.</h1>
       <nav className="flex items-center gap-12 max-tablet:hidden">
         <ul className="flex items-center gap-8">
           {navLinks.map((link, index) => (

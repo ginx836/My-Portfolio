@@ -33,38 +33,43 @@ const PortfolioSection = ({
   }, [width]);
 
   return (
-
     <section className="max-width">
-    {/* // Project section divider */}
-    <div className="pb-3 border-b border-peach flex justify-between items-center">
-      <p>{title}</p>
-      <div className="flex gap-2">
-        <button className="bg-peach-200 border border-peach p-1 rounded text-grey-700" onClick={() => swiperRef.current?.slidePrev()}>
-          <ChevronLeft />
-        </button >
-        <button className="bg-peach-200 border border-peach p-1 rounded text-grey-700" onClick={() => swiperRef.current?.slideNext()}>
-          <ChevronRight />
-        </button>
+      {/* // Project section divider */}
+      <div className="pb-3 border-b border-peach flex justify-between items-center">
+        <p>{title}</p>
+        <div className="flex gap-2">
+          <button
+            className="bg-peach-200 border border-peach p-1 rounded text-grey-700"
+            onClick={() => swiperRef.current?.slidePrev()}
+          >
+            <ChevronLeft />
+            <span className="sr-only">Précédent</span>
+          </button>
+          <button
+            className="bg-peach-200 border border-peach p-1 rounded text-grey-700"
+            onClick={() => swiperRef.current?.slideNext()}
+          >
+            <ChevronRight />
+            <span className="sr-only">Suivant</span>
+          </button>
+        </div>
       </div>
-    </div>
 
-    <div className="pt-8">
-      <Swiper 
-        slidesPerView={slidePerView}
-        spaceBetween={20}
-        loop={true}
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
-      >
-        {
-          data.map((project, index) => (
+      <div className="pt-8">
+        <Swiper
+          slidesPerView={slidePerView}
+          spaceBetween={20}
+          loop={true}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+        >
+          {data.map((project, index) => (
             <SwiperSlide key={index}>
               <PortfolioItem project={project} />
             </SwiperSlide>
-          ))
-        }
-      </Swiper>
-    </div>
-  </section>
+          ))}
+        </Swiper>
+      </div>
+    </section>
   );
 };
 

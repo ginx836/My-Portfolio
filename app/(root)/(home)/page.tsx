@@ -25,20 +25,20 @@ const page = () => {
               <p className="text-sm uppercase font-semibold mb-2 text-purple tracking-[4px] w-max">
                 Développeur Web Junior
               </p>
-              <h1 className="text-grey">GinxDev.</h1>
+              <h1 className="text-grey text-6xl">GinxDev.</h1>
             </div>
             <p className="text-grey-600">
               Bonjour, je suis Cédric Bourquin, développeur web junior.
-              <br /> De la conception à la réalisation, mon objectif est de vous aider à
-              donner vie à vos projets web pour créer une expérience utilisateur
-              exceptionnelle.
+              <br /> De la conception à la réalisation, mon objectif est de vous
+              aider à donner vie à vos projets web pour créer une expérience
+              utilisateur exceptionnelle.
               <br />
             </p>
             <div className="py-2">
               <p className="py-2 text-lg font-semibold text-purple">
                 Design, develop & deploy
               </p>
-              <p className="text-lg italic">"Keep moving forward"</p>
+              <q className=" quote text-lg italic">Keep moving forward</q>
             </div>
           </div>
           <div className="flex gap-5 mt-10 justify-center tablet:justify-start">
@@ -74,18 +74,21 @@ const page = () => {
         {/* skills */}
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] tablet:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-3 tablet:gap-6">
           {skills.map((skill, index) => (
-            <div key={index} className="box flex flex-col items-center  justify-between gap-3">
+            <div
+              key={index}
+              className="box flex flex-col items-center  justify-between gap-3"
+            >
               <div className="w-16 h-16 rounded bg-purple flex items-center justify-center flex-shrink-0 mb-2">
                 <Image
                   src={skill.icon}
-                  alt={skill.name}
+                  alt={skill.alt}
                   width={35}
                   height={35}
                   className="text-white"
                 />
               </div>
               <div className="text-center">
-                <h4 className="text-grey-700 mb-2">{skill.name}</h4>
+                <h3 className="text-grey-700 mb-2">{skill.name}</h3>
                 <p className="text-grey-600" style={{ whiteSpace: "pre-line" }}>
                   {skill.description}
                 </p>

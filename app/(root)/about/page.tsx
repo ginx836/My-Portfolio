@@ -20,9 +20,9 @@ function page() {
         </div>
         <div className="tablet:w-1/2">
           <div className="space-y-3 max-tablet:text-center flex flex-col">
-            <p className="px-4 py-2 bg-peach-500 text-grey-600 font-bold italic w-max rounded tablet:w-max max-tablet:mx-auto">
-              "Keep moving forward"
-            </p>
+            <q className=" quote px-4 py-2 bg-peach-500 text-grey-600 font-bold italic w-max rounded tablet:w-max max-tablet:mx-auto">
+              Keep moving forward
+            </q>
             <h1 className="text-grey-700 pb-5 max-tablet:text-4xl">
               Je suis Cédric Bourquin
             </h1>
@@ -38,11 +38,12 @@ function page() {
               <br />
               Je mets donc mon expérience et ma passion au service de vos
               projets.
-              <br/><br/>
-              D'un point de vue plus personnel, je suis un passionné de jeux vidéos et notamment de JRPG et de FPS.
+              <br />
+              <br />
+              D'un point de vue plus personnel, je suis un passionné de jeux
+              vidéos et notamment de JRPG et de FPS.
               <br />
               On échappe au cliché n'est ce pas ? 😄
-
             </p>
             <p className="font-bold text-lg text-center">
               Continuer à apprendre, mettre mes compétences au service de vos

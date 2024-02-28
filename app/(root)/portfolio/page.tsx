@@ -19,7 +19,7 @@ const page = ({ params }: any) => {
           <div className="w-16 h-16 rounded bg-purple flex items-center justify-center flex-shrink-0 mb-5">
             <Image
               src={"/icons/folder.svg"}
-              alt="icon"
+              alt="icône de style dossier"
               width={35}
               height={35}
             />
