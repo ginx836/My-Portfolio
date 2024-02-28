@@ -22,7 +22,7 @@ const page = () => {
         <div className="tablet:w-2/3 mt-10 tablet:mt-0">
           <div className="flex flex-col gap-3 items-center tablet:items-start max-w-2xl text-center tablet:text-left">
             <div className="flex flex-col">
-              <p className="text-sm uppercase font-semibold mb-2 text-purple tracking-[4px] w-max">
+              <p className="text-sm uppercase mb-2 text-purple tracking-[4px] w-max">
                 Développeur Web Junior
               </p>
               <h1 className="text-grey text-6xl">GinxDev.</h1>
@@ -55,7 +55,7 @@ const page = () => {
         {/* right side */}
         <div className="relative w-full tablet:w-1/2 h-[400px] tablet:h-[700px] rounded-b-2xl overflow-hidden">
           <Image
-            src="/images/logo4.svg"
+            src="/images/Logo2.svg"
             alt="hero"
             fill
             priority

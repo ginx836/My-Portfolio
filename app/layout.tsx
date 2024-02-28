@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Lexend } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({ subsets: ["latin"] });
+const lexend = Lexend({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Gindev - Cédric Bourquin",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`bg-peach-600 ${manrope.className}`}>{children}</body>
+      <body className={`bg-peach-600 ${lexend.className}`}>{children}</body>
     </html>
   );
 }

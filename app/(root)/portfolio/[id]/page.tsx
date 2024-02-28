@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import RenderTechnologies from "@/components/DisplayDevIcon";
-import { ArrowLeft, ArrowRight } from "lucide-react"; // Import Lucide icons
+import { MoveLeft, MoveRight } from "lucide-react"; // Import Lucide icons
 
 export const metadata: Metadata = {
   title: "Mes projets - Cédric Bourquin",
@@ -25,7 +25,7 @@ export default function PortfolioDetails({ params }: any) {
         <section className="max-width section-padding">
           <div className="box flex flex-col">
             <div className="gap-2 mb-10">
-              <h1 className="uppercase text-3xl tracking-[4px] text-purple">
+              <h1 className="uppercase font-normal text-3xl tracking-[3px] text-purple">
                 {project.header}
               </h1>
               <h2 className="text-grey-700 text-xl">{project.body_title}</h2>
@@ -91,7 +91,7 @@ export default function PortfolioDetails({ params }: any) {
                     }`}
                     aria-label="Projet précédent"
                   >
-                    <ArrowLeft size={20} className="hover:text-purple" />
+                    <MoveLeft size={25} className="hover:text-purple" />
                     <span className="sr-only">Projet précédent</span>
                   </Link>
                 )}
@@ -118,7 +118,7 @@ export default function PortfolioDetails({ params }: any) {
                     }`}
                     aria-label="Projet suivant"
                   >
-                    <ArrowRight size={20} className="hover:text-purple" />
+                    <MoveRight size={25} className="hover:text-purple" />
                     <span className="sr-only">Projet suivant</span>
                   </Link>
                 )}
