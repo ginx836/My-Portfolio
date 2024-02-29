@@ -12,7 +12,7 @@ function page() {
       <section className="max-width section-padding flex flex-col tablet:flex-row gap-20 items-center justify-center">
         <div className="relative w-full tablet:w-1/3 h-[calc(300px+20vw)] tablet:h-[700px]">
           <Image
-            src={"/images/profil2.webp"}
+            src={"/images/Profil2.webp"}
             fill
             alt="Photo de profil"
             className="object-contain"
