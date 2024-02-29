@@ -5,9 +5,30 @@ import "./globals.css";
 const lexend = Lexend({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Gindev - Cédric Bourquin",
+  title: "Ginxdev - Cédric Bourquin",
   description: "Mon portfolio de développeur web",
-  keywords: ["portfolio", "développeur web", "développeur front-end", "next.js", "tailwindcss"],
+  keywords: [
+    "portfolio",
+    "développeur web",
+    "développeur front-end",
+    "next.js",
+    "tailwindcss",
+  ],
+  openGraph: {
+    title: "Ginxdev - Portfolio de Cédric Bourquin",
+    description: "Développeur web, portfolio de Cédric Bourquin",
+    url: "",
+    siteName: "Ginxdev - Portfolio de Cédric Bourquin",
+    images: [
+      {
+        url: "",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
