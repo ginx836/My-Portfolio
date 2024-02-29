@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "Ginxdev - Portfolio de Cédric Bourquin",
     images: [
       {
-        url: "https://ginxdev.vercel.app/_next/image?url=%2Fimages%2FProfil2.webp&w=1920&q=75",
+        url: "https://ginxdev.vercel.app/sitecover.webp",
         width: 432,
         height: 700,
       },
