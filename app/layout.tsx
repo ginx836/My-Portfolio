@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ginxdev - Portfolio de Cédric Bourquin",
     description: "Développeur web, portfolio de Cédric Bourquin",
-    url: "",
+    url: "https://ginxdev.vercel.app/",
     siteName: "Ginxdev - Portfolio de Cédric Bourquin",
     images: [
       {
-        url: "",
-        width: 1200,
-        height: 630,
+        url: "https://ginxdev.vercel.app/_next/image?url=%2Fimages%2FProfil2.webp&w=1920&q=75",
+        width: 432,
+        height: 700,
       },
     ],
     locale: "fr_FR",
