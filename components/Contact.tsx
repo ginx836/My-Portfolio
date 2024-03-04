@@ -130,6 +130,7 @@ const Contact = () => {
                 name="user_name"
                 ref={nameRef}
                 aria-label="Nom"
+                required
               />
               <input
                 type="text"
@@ -146,6 +147,7 @@ const Contact = () => {
                 name="user_email"
                 ref={emailRef}
                 aria-label="Email"
+                required
               />
             </div>
             <textarea
@@ -154,6 +156,7 @@ const Contact = () => {
               name="message"
               ref={messageRef}
               aria-label="Message"
+              required
             ></textarea>
 
             <div className="flex gap-10 items-center">
