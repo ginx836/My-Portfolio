@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Mon Portfolio - 1er projet autonome en REACT avec Next JS / Tailwind CSS 
 
-First, run the development server:
+
+## Screenshots
+
+![Capture d'écran](/public/sitecover.webp)
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/ginx836/My-Portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd My-portfolio
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run this project, you will need to add the following environment variables to your .env file
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY` Définit la clé publique pour Email JS
+
+
+## Documentation
+
+Ce projet utilise les dépendances suivantes : 
+
+ * React 18 
+ * Next JS 14.1.0
+ * [Email JS 4.1.0](https://www.emailjs.com/)
+ * [Framer-motion 11.0.6](https://www.framer.com/motion/)
+ * [React-Icons 5.0.1](https://react-icons.github.io/react-icons/)
+ * [lucide-react](https://lucide.dev//)
+ * [Swipper 11.0.6](https://swiperjs.com/)
+ * Eslint
+ * PostCSS
+ 
+## Related
+
+Merci à "Open Source Coding" pour le tutoriel 
+[Lien Youtube](https://youtu.be/h2ahP9EzEHU?si=L9hotYsaGqO6LccS)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
