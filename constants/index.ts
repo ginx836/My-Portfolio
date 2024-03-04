@@ -22,7 +22,7 @@ export const skills = [
       "Coder l'aspect visuel de votre site pour assurer une expérience attractive et sans accroc.",
     tags: ["React", "TailwindCSS", "Next.js", "Node.js", "Express", "MongoDB"],
     icon: "/icons/file-code-2.svg",
-    alt:"skill développpelement"
+    alt: "skill développpelement",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const skills = [
       "Créer une interface utilisateur intuitive et conviviale pour un site web ou une application. Améliorer l'expérience utilisateur pour un impact positif sur votre audience.",
     tags: ["Figma", "Adobe XD"],
     icon: "/icons/swatch-book.svg",
-    alt:"skill design"
+    alt: "skill design",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ export const skills = [
       "Mettre en place les bonnes pratiques en matière d'accessibilité pour booster votre site web.\nAméliorer la visibilité de votre site sur les moteurs de recherche grâce à une optimisation SEO.",
     tags: ["Google", "SEO", "Lighthouse"],
     icon: "/icons/user.svg",
-    alt:"skill accessibilite"
+    alt: "skill accessibilite",
   },
 ];
 export const socialLinks = [
@@ -48,7 +48,7 @@ export const socialLinks = [
     id: 1,
     label: "Linkedin",
     icon: "/icons/linkedin.svg",
-    url: "https://www.linkedin.com/in/cedric-bourquin-092a8a250/",
+    url: "https://www.linkedin.com/in/cedric-bourquin-ginxdev/",
   },
 ];
 export const projects = [
@@ -62,7 +62,6 @@ export const projects = [
       "Intégrer une maquette en HTML et CSS",
       "Respecter les bonnes pratiques du HTML et du CSS",
       "Versionner avec Git et GitHub",
-      
     ],
     technologies: ["SiHtml5", "SiCss3", "SiGit", "SiGithub"],
     pictures: [
