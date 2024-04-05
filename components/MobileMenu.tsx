@@ -27,11 +27,11 @@ const MobileMenu = () => {
 
       {/* sidebar */}
       <div
-        className={`w-full h-full flex flex-col bg-peach-600 fixed top-0 left-0 z-50 trnasition-all duration-300 ease-in-out transform
+        className={`w-full h-full flex flex-col bg-peach-600 fixed top-0 left-0 z-50 transition-all duration-300 ease-in-out transform
       ${is0pen ? "-translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex w-full items-center justify-between h-20 max-width border-b border-peach">
-            <p className="text-purple text-xl font-semibold">GinxDev.</p>
+          <p className="text-purple text-xl font-semibold">GinxDev.</p>
           <button
             className="text-grey-700 hover:text-purple transition-colors"
             onClick={toggleMenu}
