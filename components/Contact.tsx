@@ -82,7 +82,7 @@ const Contact = () => {
               <p className="text-grey-600">
                 Vous pouvez me contacter directement par mail
               </p>
-              <p className="tex-tgrey-700 font-bold">
+              <p className="text-grey-700 font-bold">
                 <a href="mailto:cedric.bourquin1@icloud.com">
                   cedric.bourquin1@icloud.com
                 </a>
@@ -97,7 +97,7 @@ const Contact = () => {
               </p>
             </div>
             <div className="box !p-6 ">
-              <p className="tex-tgrey-700">Auxerre, France</p>
+              <p className="text-grey-700">Auxerre, France</p>
             </div>
             <p className="mt-10 mb-3 text-grey-700 max-tablet:text-center">
               Mes réseaux
