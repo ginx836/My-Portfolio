@@ -45,7 +45,7 @@ To run this project, you will need to add the following environment variables to
 Ce projet utilise les dépendances suivantes : 
 
  * React 18 
- * Next JS 14.1.0
+ * Next JS 14.1.1
  * [Email JS 4.1.0](https://www.emailjs.com/)
  * [Framer-motion 11.0.6](https://www.framer.com/motion/)
  * [React-Icons 5.0.1](https://react-icons.github.io/react-icons/)
