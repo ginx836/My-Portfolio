@@ -30,9 +30,9 @@ const Contact = () => {
     }
 
     const templateParams = {
-      name: nameRef.current.value,
-      surname: surnameRef.current.value,
-      email: emailRef.current.value,
+      user_name: nameRef.current.value,
+      user_surname: surnameRef.current.value,
+      user_email: emailRef.current.value,
       message: messageRef.current.value,
     };
 
